@@ -24,9 +24,7 @@ end
 def full?(board)
   board.all?{|item|item == "X" || item == "O"}
 end
-# not !won and !!full board => true
-# not !won and not !full board = false
-# won = false
+
 def draw?(board)
   !won?(board)
 end
